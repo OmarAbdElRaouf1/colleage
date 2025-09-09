@@ -2,13 +2,11 @@ import 'package:collage/features/splash/splash_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(
-    const MyApp(),
-  );
+  runApp(const CollageApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({
+class CollageApp extends StatelessWidget {
+  const CollageApp({
     super.key,
   });
 

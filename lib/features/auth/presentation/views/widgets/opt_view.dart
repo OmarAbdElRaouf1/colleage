@@ -1,3 +1,4 @@
+import 'package:collage/features/auth/presentation/views/widgets/forget_password.dart';
 import 'package:flutter/material.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
@@ -75,7 +76,11 @@ class _OtpVerificationViewState extends State<OtpVerificationView> {
                     ),
                   ),
                   onPressed: () {
-                    // هنا تحقق من الكود
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => ForgetPasswordView(),
+                        ));
                   },
                   child: const Text(
                     "Verify",

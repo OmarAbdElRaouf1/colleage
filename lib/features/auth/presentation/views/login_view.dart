@@ -1,6 +1,7 @@
 import 'package:collage/features/auth/presentation/views/singup_view.dart';
+import 'package:collage/features/auth/presentation/views/widgets/opt_view.dart';
 import 'package:collage/features/home/presentation/views/main_view.dart';
-import 'package:collage/forget_password.dart';
+import 'package:collage/features/auth/presentation/views/widgets/forget_password.dart';
 import 'package:flutter/material.dart';
 
 class LoginView extends StatefulWidget {
@@ -88,7 +89,7 @@ class _LoginViewState extends State<LoginView> {
                   onPressed: () {
                     Navigator.of(context).push(
                       MaterialPageRoute(
-                        builder: (context) => ForgetPasswordView(),
+                        builder: (context) => OtpVerificationView(),
                       ),
                     );
                   },
